@@ -146,7 +146,6 @@ wrapper-install () {
                 then
                         [[ -f "$HOME/.local/share/icons/hicolor/512x512/apps/roblox.png" ]] || { mkdir -p "$HOME/.local/share/icons/hicolor/512x512/apps"; rwget http://img1.wikia.nocookie.net/__cb20130302012343/robloxhelp/images/f/fb/ROBLOX_Circle_Logo.png -O "$HOME/.local/share/icons/hicolor/512x512/apps/roblox.png"; }
                         export RBXICON=$HOME/.local/share/icons/hicolor/512x512/apps/roblox.png
-                        cat <<-EOF > $HOME/.local/share/applications/Roblox.desktop
                         [Desktop Entry]
                         Comment=Play Roblox
                         Name=Roblox Linux Wrapper
